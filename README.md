@@ -49,8 +49,6 @@ Struktur folder terdiri dari file HTML, CSS, JavaScript, dan JSON. Backend mengg
     - `song.js` : Logika halaman detail lagu, termasuk pemutaran YouTube.
     - `utils.js` : Fungsi bantu umum seperti format tanggal, parsing ID YouTube, dll.
 
-- **/node_modules/**
-    - Folder dependensi Node.js yang diinstall melalui npm.
 
 ## Lisensi
 Proyek ini menggunakan lisensi **GNU General Public License v3.0** dan bebas digunakan serta dimodifikasi sesuai kebutuhan.
