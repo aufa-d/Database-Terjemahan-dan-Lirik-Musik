@@ -33,8 +33,8 @@ Struktur folder terdiri dari file HTML, CSS, JavaScript, dan JSON. Backend mengg
     - `edit.html` : Form untuk mengedit lagu yang sudah ada.
     - `song.html` : Halaman detail untuk satu lagu.
     - `server.js` : Backend server menggunakan Express.js.
-    - `package.json` : Konfigurasi dependensi dan metadata proyek.
-    - `package-lock.json` : Versi terkunci dari dependensi.
+    - `package.json` : Konfigurasi dependensi dan metadata proyek dari Node.js.
+    - `package-lock.json` : Konfigurasi terkunci untuk dependensi dan metadata proyek dari Node.js.
 
 - **/css/**
     - `style.css` : File CSS utama untuk styling tampilan aplikasi.
