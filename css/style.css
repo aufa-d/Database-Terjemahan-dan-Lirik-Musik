@@ -1,0 +1,28 @@
+/* menyesuaikan font utama */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* meluruskan tampilan daftar lagu */
+#songList div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* menata gambar thumbnail */
+#songList img {
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+/* menata teks judul */
+#songList h3 {
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+/* menata teks terjemahan */
+#songList p {
+  color: #9ca3af;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Lagu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col items-center">
+
+  <!-- judul halaman -->
+  <header class="py-8 text-center">
+    <h1 class="text-3xl font-bold">Edit Lagu</h1>
+  </header>
+
+  <!-- form edit lagu -->
+  <main class="w-3/4 mb-12">
+    <form id="editSongForm" class="space-y-4">
+      <!-- judul -->
+      <label for="title" class="block mb-1">Judul Lagu</label>
+      <input id="title" type="text" 
+            class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+            required>
+
+      <!-- terjemahan judul -->
+      <label for="titleTranslation" class="block mb-1">Terjemahan Judul</label>
+      <input id="titleTranslation" type="text" 
+            class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+      <!-- link youtube -->
+      <label for="youtubeUrl" class="block mb-1">Link YouTube</label>
+      <input id="youtubeUrl" type="url" 
+            class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+            required>
+
+      <!-- lirik -->
+      <label for="lyrics" class="block mb-1">Lirik</label>
+      <textarea id="lyrics" rows="8" 
+                class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+
+      <!-- terjemahan -->
+      <label for="translation" class="block mb-1">Terjemahan</label>
+      <textarea id="translation" rows="8" 
+                class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+
+      <!-- tombol simpan + kembali bersebelahan -->
+      <div class="flex justify-end gap-4">
+        <button type="button"
+          onclick="window.location.href='song.html?id=' + new URLSearchParams(window.location.search).get('id')"
+          class="px-4 py-2 bg-gray-600 text-white rounded-md font-semibold hover:bg-gray-700">
+          Kembali
+        </button>
+
+        <button type="submit"
+          class="px-4 py-2 bg-blue-600 text-white rounded-md font-semibold hover:bg-blue-700">
+          Simpan Perubahan
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <!-- script edit -->
+  <script src="js/utils.js"></script>
+  <script src="js/edit.js"></script>
+</body>
+</html>

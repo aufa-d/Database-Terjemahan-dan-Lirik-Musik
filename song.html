@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Lagu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col items-center">
+
+  <!-- judul lagu -->
+  <header class="py-8 text-center">
+    <h1 id="songTitle" class="text-4xl font-bold"></h1>
+    <h2 id="songTitleTranslation" class="text-xl text-gray-300 mt-2"></h2>
+  </header>
+
+  <!-- video youtube -->
+  <section class="w-3/4 mb-8">
+    <iframe id="songVideo" class="w-full aspect-video rounded-md border border-white"
+      src="" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <!-- meta tanggal + tombol kontrol -->
+  <section class="w-3/4 mb-4 flex justify-between items-start">
+    <!-- tanggal -->
+    <div id="songMeta" class="text-gray-400 text-sm"></div>
+
+    <!-- tombol kontrol -->
+    <div class="flex gap-4">
+      <!-- tombol kembali -->
+      <button id="backBtn"
+        class="px-4 py-2 bg-gray-600 text-white rounded-md font-semibold hover:bg-gray-700">
+        Kembali
+      </button>
+      <!-- tombol toggle terjemahan -->
+      <button id="toggleTranslation"
+        class="px-4 py-2 bg-white text-black rounded-md font-semibold hover:bg-gray-200">
+        Toggle Terjemahan
+      </button>
+      <!-- tombol edit -->
+      <button id="editSongBtn"
+        class="px-4 py-2 bg-blue-600 text-white rounded-md font-semibold hover:bg-blue-700">
+        Edit
+      </button>
+      <!-- tombol hapus -->
+      <button id="deleteSongBtn"
+        class="px-4 py-2 bg-red-600 text-white rounded-md font-semibold hover:bg-red-700">
+        Delete
+      </button>
+    </div>
+  </section>
+
+  <!-- konten lirik dan terjemahan -->
+  <main class="w-3/4 grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+    <div id="lyrics" class="space-y-2 text-white"></div>
+    <div id="translation" class="space-y-2 text-gray-300"></div>
+  </main>
+
+  <!-- script utama -->
+  <script src="js/utils.js"></script>
+  <script src="js/song.js"></script>
+</body>
+</html>
