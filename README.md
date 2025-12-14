@@ -13,11 +13,15 @@ Aplikasi web sederhana untuk mengelola koleksi lagu, termasuk lirik asli dan ter
 ## Instalasi
 1. Pastikan sudah memiliki Node.js
 2. Clone repository ini atau unduh Zip
-3. Masuk ke folder proyek dan jalankan server.js:
+3. Masuk ke folder repository dan install framework Express.js:
+    ```
+    npm install express
+    ```
+4. Jalankan server.js:
     ```
     node server.js
     ```
-4. Masuk ke localhost yang diberikan
+5. Buka localhost yang diberikan
 
 
 ## Struktur Proyek
