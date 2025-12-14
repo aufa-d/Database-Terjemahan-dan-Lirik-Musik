@@ -18,30 +18,34 @@
     <form id="addSongForm" class="space-y-4">
       <!-- judul -->
       <label for="title" class="block mb-1">Judul Lagu</label>
-      <input id="title" type="text" 
-            class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+      <input id="title" type="text"
+            class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required>
 
       <!-- terjemahan judul -->
       <label for="titleTranslation" class="block mb-1">Terjemahan Judul</label>
-      <input id="titleTranslation" type="text" 
+      <input id="titleTranslation" type="text"
             class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
       <!-- link youtube -->
       <label for="youtubeUrl" class="block mb-1">Link YouTube</label>
-      <input id="youtubeUrl" type="url" 
-            class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+      <input id="youtubeUrl" type="url"
+            class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required>
 
-      <!-- lirik -->
-      <label for="lyrics" class="block mb-1">Lirik</label>
-      <textarea id="lyrics" rows="8" 
-                class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-
-      <!-- terjemahan -->
-      <label for="translation" class="block mb-1">Terjemahan</label>
-      <textarea id="translation" rows="8" 
-                class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      <!-- lirik dan terjemahan sejajar -->
+      <div class="grid grid-cols-2 gap-6">
+        <div>
+          <label for="lyrics" class="block mb-1">Lirik</label>
+          <textarea id="lyrics" rows="12"
+                    class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+        <div>
+          <label for="translation" class="block mb-1">Terjemahan</label>
+          <textarea id="translation" rows="12"
+                    class="w-full p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+      </div>
 
       <!-- tombol simpan + kembali bersebelahan -->
       <div class="flex justify-end gap-4">

@@ -26,3 +26,16 @@ body {
 #songList p {
   color: #9ca3af;
 }
+
+/* tambahan untuk form sejajar lirik dan terjemahan */
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
